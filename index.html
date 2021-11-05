@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 송세희 - 레이아웃2</title>
+    <!-- 페비콘 -->
+    <link rel="shoutcut icon" href="images/fv.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script:src -->
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    <script>
+         //    $(function(){ 실행문 });
+         $(function(){
+             $('.inner-fade').innerfade({
+                 animationtype:'fade',
+                 timeout:2000  // 2초
+             });
+         });
+    </script>
+</head>
+<body>
+    <!-- #wrap>header+section.con.section.btn+footer -->
+    <!-- 레이아웃 잡을때는 id로 코딩 -->
+    <div id="wrap">
+        <header>
+            <!-- logo+menu-->
+            <!-- h1.logo+.menu -->
+            <h1 class="logo">
+                <!-- a>img -->
+                <!-- 주석처리 : ctrl+/ -->
+                <a href="#"><img src="images/logo.png" alt="삼성로고"></a>
+            </h1>
+            <div class="menu">
+                <!-- 스토리 사회공헌 IR 인재채용-->
+                <!-- ul>li>a{스토리} -->
+                <ul>
+                    <li><a href="#">스토리</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="con">
+        <!-- .slide+.nb (3개의 이미지/공지사항+배너)-->
+        <div class="slide">
+            <!-- ul>li*3 : 순서없는목록 ● -->
+            <!-- ol>li*3 : 순서있는목록 1 -->
+            <ul class="inner-fade">
+                <li><a href="https://naver.com"><img src="images/slide-01.png" alt="3D Graphic 1"></a></li>
+                <li><a href="https://naver.com"><img src="images/slide-02.png" alt="3D Graphic 2"></a></li>
+                <li><a href="https://naver.com"><img src="images/slide-03.png" alt="3D Graphic 3"></a></li>
+            </ul>
+        </div>
+        <!-- 오른쪽박스 전체 -->
+        <div class="nb">
+            <!-- 공지사항 -->
+            <div class="notice">
+                <h2>공지사항</h2>
+                 <!-- ul>li*6>a{삼성 대형가전 최대 30만원 상품권 증정}+span{21-09-13} -->
+                 <ul>
+                    <li><a href="#">삼성 대형가전 최대 30만원 상품권 증정</a><span>21-09-13</span></li>
+                    <li><a href="#">갤럭시 스튜디오 기능 체험하기 </a><span>21-09-13</span></li>
+                    <li><a href="#">영화관보다 더 영화관처럼 4K 프리미엄 빔</a><span>21-09-13</span></li>
+                    <li><a href="#">2022 BESPOKE 김치플러스 런칭</a><span>21-09-13</span></li>
+                    <li><a href="#">VIDEO 갤럭시 리얼 마케팅쇼 </a><span>21-09-13</span></li>
+                    <li><a href="#">EVENT - 나만의 폴더블 캐릭터 경험하기</a><span>21-09-13</span></li>
+                </ul>
+            </div>
+            <!-- 배너 -->
+            <div class="banner">
+                <a href="https://www.samsung.com/sec/galaxy-z-fold3/launching/"><img src="images/banner.gif" alt="삼성슈퍼세일 Galaxy Z Flip 5G 구매혜택보기"></a>
+            </div>
+        </section>
+        <section class="btn">
+            <!-- ul>li>a>img -->
+            <ul>
+                <li><a href="#"><img src="images/icon-sectors-academy.svg" alt="btn_01"></a></li>
+                <li><a href="#"><img src="images/icon-sectors-education.svg" alt="btn_02"></a></li>
+                <li><a href="#"><img src="images/icon-sectors-distribution.svg" alt="btn_03"></a></li>
+                <li><a href="#"><img src="images/icon-sectors-hotel.svg" alt="btn_04"></a></li>
+                <li><a href="#"><img src="images/icon-sectors-medical.svg" alt="btn_05"></a></li>
+                <li><a href="#"><img src="images/icon-sectors-military.svg" alt="btn_06"></a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>
+                삼성전자 대표 : 김기남 / 경기도 수원시 영통구 삼성로 129(매탄동) / 대표번호 : 02-2255-0114 <br />
+                Copyright © 1995-2021  <a href="mailto:samsung@samsung.com"> <strong> Samsung. </strong></a> All Rights Reserved
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
