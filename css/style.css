@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* reset = 초기화 */ 
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {margin: 0; padding: 0; list-style:none;}
+/* margin : 바깥여백 */
+/* padding : 안쪽여백 */
+#wrap {width: 1200px; margin: 0 auto; }
+
+/* header */
+#wrap header{width: 1200px; height: 120px; border-bottom: 1px solid #000; box-sizing: border-box; }
+/* box-sizing: border-box; -> margin, padding, border 사이즈를 포함시키겠다는 의미 */
+/* logo */
+#wrap header .logo{width: 300px; height: 120px; float:left ;}
+#wrap header .logo img{margin-top: 48px;}
+#wrap header .logo img:hover{opacity: 0.7;}
+/* opacity: 투명도 0.7 -> 70% */
+
+
+#wrap header .menu{width: 900px; height: 120px,; float: left ;}
+#wrap header .menu ul {float: right; margin-top: 48px;}
+#wrap header .menu ul li {float: left; margin-left: 60px;}
+#wrap header .menu ul li a{font-size: 17px; color: #000; text-decoration:  none; font-weight: bold;}
+#wrap header .menu ul li a:hover {color:#999}
+#wrap header .menu ul li a:focus {color:#999}
+/* text-decoration; : 링크에 선 생기는거 없애기 */
+/* font-weight: bold; -> 글자 굴게 하기 */
+/* :hover ->마우스 올렸을때 */
+
+
+#wrap section.con{width: 1200px; height: 500px; background: #999; }
+#wrap section.con .slide {width: 730px; height: 500px; float: left;}
+#wrap section.con .slide img {display: block; width: 730px; height: 500px;}
+
+
+#wrap section.con .nb {width: 470px; height: 500px; float: left;}
+/* 공지사항 */
+#wrap section.con .nb .notice {width: 470px; height: 250px; background: #fff;}
+#wrap section.con .nb .notice h2 { color:#333; padding: 12px 0 0 7px ; /* 상단, 오른쪽, 하단, 왼쪽 */ }
+#wrap section.con .nb .notice ul {padding: 7px;} /* 상단, 오른쪽, 하단, 왼쪽 : 7px */
+#wrap section.con .nb .notice ul li {height: 32px; line-height: 32px;
+    /* 리스트의 높이값을 30px으로 준 이후 리스트 내용을 수직 중앙 정렬로 하려면 line-height값을 같은수치 30px로 준다 */
+     border-bottom: 1px dotted #ddd;} 
+
+#wrap section.con .nb .notice ul li a{ color:#666; text-decoration: none; font-size: 15px;
+    /* 링크 줄 없애기 */}
+#wrap section.con .nb .notice ul li a:hover {color:#999; text-decoration: underline; /* 링크 줄 넣기 */}
+#wrap section.con .nb .notice ul li span {color:rgb(179, 179, 179); font-size: 14px; float:right;}
+
+
+/* 배너 */ 
+#wrap section.con .nb .banner {width: 470px; height: 250px;}
+
+
+
+/* #wrap section.btn{width: 1200px; height: 180px; background: #ddd; } */
+#wrap section.btn{width: 1200px; height: 180px; background: #2c2c2c; }
+#wrap section.btn ul li {float: left; margin: 40px 50px;} /* 상하, 좌우 */
+#wrap section.btn ul li img { width: 100px; height: 100px;}
+#wrap section.btn ul li img:hover {opacity: 0.7;}
+/* 주소 + 저작권 */
+#wrap footer{width: 1200px; height: 120px;   border-top: 1px solid #000; box-sizing: border-box; }
+
+#wrap footer p {font-size: 13px; text-align: center; padding-top: 20px; line-height: 1.7;}
+#wrap footer a {color:#000; text-transform: uppercase; text-decoration: none; }
+#wrap footer a:hover {color:#999; text-decoration: underline;}
